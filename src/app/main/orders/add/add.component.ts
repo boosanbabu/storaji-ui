@@ -8,7 +8,7 @@ import { OrdersService } from '../../../core/services/orders.service';
 import { Product } from '../../../core/classes/product';
 import { Customer } from '../../../core/classes/customer';
 import { Order } from '../../../core/classes/order';
-import { OrderDetail } from '../../../core/classes/order-detail';
+import { OrderLineItem } from '../../../core/classes/order-detail';
 import { StatsService } from '../../../core/services/stats.service';
 import { UtilsService } from '../../../shared/services/utils.service';
 
