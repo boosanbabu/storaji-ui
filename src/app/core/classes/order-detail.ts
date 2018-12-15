@@ -5,5 +5,6 @@ export class OrderLineItem {
   product_id?: string;
   amount: number = 0;
   qty?:number;
+  discount_amount?:number;
   product: Product = new Product();
 }
