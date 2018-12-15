@@ -3,6 +3,7 @@ import { OrderLineItem } from './order-detail';
 
 export class Order {
   id?: string;
+  order_number?:number;
   customer_id?: string;
   customer: Customer = new Customer();
   order_detail: OrderLineItem = new OrderLineItem();
@@ -16,4 +17,5 @@ export class Order {
   order_status?:String;
   shipment_cost?:number;
   order_type?:String;
+  order_total?:String;
 }

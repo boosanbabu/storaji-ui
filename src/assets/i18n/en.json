@@ -31,12 +31,17 @@
       "name": "Company Name"
     },
     "order": {
-      "id": "Order ID"
+      "id": "Order ID",
+      "number":"Order No."
+
     },
     "product": {
       "name": "Product Name"
     },
-    "date": "Date"
+    "date": "Date",
+    "dueDate":"Due Date",
+    "orderValue":"Order Value"
+
   },
   "form": {
     "label": {
