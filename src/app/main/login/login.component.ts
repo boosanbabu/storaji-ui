@@ -12,13 +12,14 @@ class Credentials {
 }
 
 @Component({
-  selector: 'storaji-login',
+  selector: 'thoorigai-login',
   templateUrl: './login.component.html',
   styles: []
 })
 export class LoginComponent implements OnInit, OnDestroy {
   credentials = new Credentials();
-
+  private credential = {'username':'', 'password' : ''};
+  
   private _sub: Subscription = undefined;
 
   constructor(
@@ -37,11 +38,26 @@ export class LoginComponent implements OnInit, OnDestroy {
     this._utils.unsubscribeSub(this._sub);
   }
 
-  onSubmit() {
-    this._utils.unsubscribeSub(this._sub);
-    this._sub = this._auth.login(this.credentials).subscribe();
-  }
+  // onSubmit() {
+  //   this._utils.unsubscribeSub(this._sub);
+  //   this._sub = this._auth.login(this.credentials).subscribe();
+  // }
 
+  //Book Code
+  onSubmit() {
+  	this._auth.sendCredential(this.credential.username, this.credential.password).subscribe(
+  		res => {
+  			console.log(res);
+        localStorage.setItem("oatoken", res.json().token);
+        
+  			//this.loggedIn = true;
+  		//	location.reload();
+  		},
+  		error => {
+  			console.log(error);
+  		}
+  	);
+  }
   onChangeLanguage(language: string) {
     this._utils.setLang(language);
   }

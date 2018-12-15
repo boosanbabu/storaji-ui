@@ -1,4 +1,4 @@
-<storaji-navbar></storaji-navbar>
+<thoorigai-navbar></thoorigai-navbar>
 <div class="content-background">
   <div class="uk-section-small">
     <div class="uk-container uk-container-large">
@@ -36,14 +36,14 @@
                   <div class="uk-margin">
                     <div class="uk-position-relative">
                       <span class="uk-form-icon ion-android-person"></span>
-                      <input class="uk-input" name="email" type="email" placeholder="{{ 'form.placeholder.email' | translate }}" [(ngModel)]="credentials.email"
+                      <input class="uk-input" name="email" type="email" placeholder="{{ 'form.placeholder.email' | translate }}" [(ngModel)]="credential.username"
                         #email="ngModel">
                     </div>
                   </div>
                   <div class="uk-margin">
                     <div class="uk-position-relative">
                       <span class="uk-form-icon ion-locked"></span>
-                      <input class="uk-input" name="password" type="password" placeholder="{{ 'form.placeholder.password' | translate }}" [(ngModel)]="credentials.password"
+                      <input class="uk-input" name="password" type="password" placeholder="{{ 'form.placeholder.password' | translate }}" [(ngModel)]="credential.password"
                         #password="ngModel">
                     </div>
                   </div>

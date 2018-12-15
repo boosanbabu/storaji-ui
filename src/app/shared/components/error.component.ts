@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { Config } from '../classes/app';
 
 @Component({
-  selector: 'storaji-error',
+  selector: 'thoorigai-error',
   templateUrl: './error.component.html',
   styles: []
 })

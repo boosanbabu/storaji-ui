@@ -114,13 +114,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "storaji",
+      "thoorigai",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "storaji",
+      "thoorigai",
       "kebab-case"
     ],
     "use-input-property-decorator": true,

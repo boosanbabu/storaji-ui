@@ -12,7 +12,7 @@ import { UtilsService } from '../../../shared/services/utils.service';
 
 declare var numeral: any;
 @Component({
-  selector: 'storaji-products-edit',
+  selector: 'thoorigai-products-edit',
   templateUrl: './edit.component.html',
   styles: []
 })

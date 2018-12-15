@@ -14,7 +14,7 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 declare var numeral: any;
 @Component({
-  selector: 'storaji-orders-overview',
+  selector: 'thoorigai-orders-overview',
   templateUrl: './overview.component.html',
   styles: []
 })

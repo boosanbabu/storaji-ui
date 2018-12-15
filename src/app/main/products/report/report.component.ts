@@ -13,7 +13,7 @@ pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 declare var numeral: any;
 @Component({
-  selector: 'storaji-products-report',
+  selector: 'thoorigai-products-report',
   templateUrl: './report.component.html',
   styles: []
 })
@@ -128,7 +128,7 @@ export class ReportComponent implements OnInit, OnDestroy {
         i + 1,
         item.name,
         item.sku,
-        item.type.name,
+        item.type,
         item.stock,
         this.currency.set(item.cost).format(this._utils.format),
         this.currency.set(item.selling_price).format(this._utils.format),

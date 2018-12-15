@@ -7,7 +7,7 @@ import { Customer } from '../../../core/classes/customer';
 import { UtilsService } from '../../../shared/services/utils.service';
 
 @Component({
-  selector: 'storaji-customers-add',
+  selector: 'thoorigai-customers-add',
   templateUrl: './add.component.html',
   styles: []
 })

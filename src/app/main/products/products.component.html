@@ -1,9 +1,9 @@
-<storaji-navbar></storaji-navbar>
-<storaji-sidebar></storaji-sidebar>
+<thoorigai-navbar></thoorigai-navbar>
+<thoorigai-sidebar></thoorigai-sidebar>
 <div class="content-padder content-background">
   <div class="uk-section-small">
     <div class="uk-container uk-container-large">
-      <storaji-products-add (update)="onUpdate($event)"></storaji-products-add>
+      <thoorigai-products-add (update)="onUpdate($event)"></thoorigai-products-add>
       <div class="uk-card uk-card-default uk-card-body" products-table>
         <table class="uk-table uk-table-justify uk-table-divider">
           <thead>
@@ -12,10 +12,12 @@
                 <span uk-icon="icon: image;"></span>
               </th>
               <th class="uk-width-medium">{{ 'table.name' | translate }}</th>
-              <th>{{ 'table.sku' | translate }}</th>
               <th>{{ 'table.type' | translate }}</th>
+              <th>{{ 'table.design' | translate }}</th>
+              <th>{{ 'table.sku' | translate }}</th>
               <th>{{ 'table.stock' | translate }}</th>
               <th>{{ 'table.status' | translate }}</th>
+              <th>{{ 'table.tax' | translate }}</th>
             </tr>
           </thead>
           <tbody>
@@ -29,9 +31,12 @@
               <td class="uk-table-link">
                 <a [routerLink]="['../products', product.id]" class="uk-link-reset">{{product.name}}</a>
               </td>
+              <td>{{product.type}}</td>
+              <td>{{product.design}}</td>
               <td>{{product.sku}}</td>
-              <td>{{(product.type) ? product.type.name : product.type}}</td>
               <td>{{product.stock}}</td>
+              <td>{{product.status}}</td>
+              <td>{{product.tax}}</td>
               <div *ngIf="(product.stock > 0); then ok else not"></div>
               <ng-template #ok>
                 <td>

@@ -10,7 +10,7 @@ import { UtilsService } from '../../../shared/services/utils.service';
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
-  selector: 'storaji-customers-report',
+  selector: 'thoorigai-customers-report',
   templateUrl: './report.component.html',
   styles: []
 })

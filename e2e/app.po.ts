@@ -10,6 +10,6 @@ export class AppPage {
   }
 
   getLoginHeader() {
-    return element(by.css('storaji-root storaji-login .uk-card-body h2')).getText();
+    return element(by.css('thoorigai-root thoorigai-login .uk-card-body h2')).getText();
   }
 }

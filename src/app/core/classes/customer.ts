@@ -7,4 +7,9 @@ export class Customer {
   postal_code: string = null;
   city: string = null;
   country: string = null;
+
+  shipping_address: string = null;
+  shipping_postal_code: string = null;
+  shipping_city: string = null;
+  shipping_country: string = null;
 }

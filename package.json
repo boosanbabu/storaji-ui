@@ -1,25 +1,24 @@
 {
-  "name": "storaji",
+  "name": "தூரிகை",
   "version": "1.0.0-beta.9",
   "license": "MIT",
   "description": "The Light/Responsive Inventory Management System.",
   "main": "app/main.js",
   "author": {
-    "name": "Indomaxim Technology",
-    "email": "support@indomaxim.web.id",
-    "url": "https://indomaxim.web.id/"
+    "name": "Paypal",
+    "email": "paypal@paypal.com"
   },
   "build": {
-    "appId": "com.indomaxim.storaji",
-    "productName": "Storaji",
+    "appId": "com.paypal.thoorigai",
+    "productName": "thoorigai",
     "releaseInfo": {
       "releaseNotesFile": "src/electron/releaseNotes.md"
     },
     "publish": [
       {
         "provider": "github",
-        "owner": "IndomaximTechID",
-        "repo": "storaji"
+        "owner": "paypalTechID",
+        "repo": "thoorigai"
       }
     ],
     "files": [
@@ -56,11 +55,11 @@
     },
     "nsis": {
       "allowToChangeInstallationDirectory": true,
-      "shortcutName": "Storaji",
+      "shortcutName": "thoorigai",
       "oneClick": false,
       "perMachine": true,
       "menuCategory": true,
-      "artifactName": "StorajiSetup.exe"
+      "artifactName": "thoorigaiSetup.exe"
     }
   },
   "scripts": {
@@ -69,7 +68,7 @@
     "build:installer": "run-s \"builder {@}\" --",
     "builder": "build",
     "electron": "electron app/main.js",
-    "icons": "icon-gen -i src/assets/storaji.svg -o src/assets/icons -n ico=storaji,icns=storaji",
+    "icons": "icon-gen -i src/assets/thoorigai.svg -o src/assets/icons -n ico=thoorigai,icns=thoorigai",
     "ng": "ng",
     "ng:build": "ng build",
     "ng:e2e": "ng e2e --no-progress",

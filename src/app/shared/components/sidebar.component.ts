@@ -5,7 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
 
 declare var jQuery: any;
 @Component({
-  selector: 'storaji-sidebar',
+  selector: 'thoorigai-sidebar',
   templateUrl: './sidebar.component.html',
   styles: [],
   providers: [AuthService]

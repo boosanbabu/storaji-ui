@@ -7,7 +7,7 @@ const { name, description, version } = require('../../package.json');
 
 export const environment = {
   production: false,
-  api: 'http://localhost:8000/api',
+  api: 'http://localhost:8080',
   name,
   description,
   version

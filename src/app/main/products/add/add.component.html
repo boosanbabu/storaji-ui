@@ -15,6 +15,21 @@
         <input type="text" name="sku" class="uk-input" placeholder="{{ 'form.placeholder.sku' | translate }}" [required]="true" [(ngModel)]="product.sku"
           #sku="ngModel">
       </div>
+
+      <div class="uk-padding-small">
+        <label for="design" class="uk-form-label">{{ 'form.label.design' | translate }}</label>
+        <input type="text" name="design" class="uk-input" placeholder="{{ 'form.placeholder.design' | translate }}" [required]="true" [(ngModel)]="product.design"
+          #design="ngModel">
+      </div>
+
+      <div class="uk-padding-small">
+        <label for="status" class="uk-form-label">{{ 'form.label.status' | translate }}</label>
+        <input ngui-auto-complete class="uk-input" [(ngModel)]="product.status" [source]="status" list-formatter="name" display-property-name="name"
+          placeholder="{{ 'form.placeholder.status' | translate }}" name="status" #type="ngModel" />
+      </div>
+
+
+
       <div class="uk-padding-small">
         <label for="type" class="uk-form-label">{{ 'form.label.type' | translate }}</label>
         <input ngui-auto-complete class="uk-input" [(ngModel)]="product.type" [source]="productTypes" list-formatter="name" display-property-name="name"
@@ -26,9 +41,9 @@
           [(ngModel)]="product.stock" #stock="ngModel">
       </div>
       <div class="uk-padding-small">
-        <label for="cost" class="uk-form-label">{{ 'form.label.cost' | translate }}</label>
-        <input type="text" name="cost" class="uk-input" placeholder="{{ 'form.placeholder.cost' | translate }}" [required]="true"
-          [(ngModel)]="product.cost" #cost="ngModel" (keyup)="onKeyup($event)">
+        <label for="tax" class="uk-form-label">{{ 'form.label.tax' | translate }}</label>
+        <input type="text" name="tax" class="uk-input" placeholder="{{ 'form.placeholder.tax' | translate }}" [required]="true"
+          [(ngModel)]="product.tax" #tax="ngModel" (keyup)="onKeyup($event)">
       </div>
       <div class="uk-padding-small">
         <label for="selling_price" class="uk-form-label">{{ 'form.label.selling-price' | translate }}</label>

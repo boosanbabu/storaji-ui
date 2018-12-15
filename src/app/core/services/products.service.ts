@@ -53,16 +53,7 @@ export class ProductsService {
       );
   }
 
-  getCustomers(id: string): Observable<Customer[]> {
-    this.beforeRequest();
 
-    return this._http.get(`${this._productsUrl}/${id}/customers`, this._utils.makeOptions(this._headers))
-      .map((res: Response) => res.json().data)
-      .do(
-      data => this.afterRequest(),
-      error => { console.log(error); }
-      );
-  }
 
   add(product: Product): Observable<Product[]> {
     this.beforeRequest();

@@ -3,7 +3,7 @@ import { Title } from '@angular/platform-browser';
 import { Config } from '../classes/app';
 
 @Component({
-  selector: 'storaji-about',
+  selector: 'thoorigai-about',
   templateUrl: './about.component.html',
   styles: []
 })

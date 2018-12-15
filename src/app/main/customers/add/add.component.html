@@ -40,6 +40,29 @@
         <textarea name="address" class="uk-textarea" rows="5" placeholder="{{ 'form.placeholder.address' | translate }}" [(ngModel)]="customer.address"
           #address="ngModel"></textarea>
       </div>
+
+      <div class="uk-padding-small">
+        <label for="shipping_postal_code" class="uk-form-label">{{ 'form.label.shipping_postal-code' | translate }}</label>
+        <input type="text" name="shipping_postal_code" class="uk-input" placeholder="{{ 'form.placeholder.shipping_postal-code' | translate }}" [required]="true"
+          [(ngModel)]="customer.shipping_postal_code" #shipping_postal_code="ngModel">
+      </div>
+      <div class="uk-padding-small">
+        <label for="shipping_country" class="uk-form-label">{{ 'form.label.shipping_country' | translate }}</label>
+        <input type="text" name="shipping_country" class="uk-input" placeholder="{{ 'form.placeholder.shipping_country' | translate }}" [required]="true"
+          [(ngModel)]="customer.shipping_country" #shipping_country="ngModel">
+      </div>
+      <div class="uk-padding-small">
+        <label for="shipping_city" class="uk-form-label">{{ 'form.label.shipping_city' | translate }}</label>
+        <input type="text" name="shipping_city" class="uk-input" placeholder="{{ 'form.placeholder.shipping_city' | translate }}" [required]="true"
+          [(ngModel)]="customer.shipping_city" #shipping_city="ngModel">
+      </div>
+      <div class="uk-width-1-1 uk-padding-small">
+        <label for="shipping_address" class="uk-form-label">{{ 'form.label.shipping_address' | translate }}</label>
+        <textarea name="shipping_address" class="uk-textarea" rows="5" placeholder="{{ 'form.placeholder.shipping_address' | translate }}" [(ngModel)]="customer.shipping_address"
+          #shipping_address="ngModel"></textarea>
+      </div>
+
+
       <div class="uk-width-1-1 uk-padding-small">
         <button type="submit" class="uk-button uk-button-primary" [disabled]="!customerForm.form.valid">{{ 'form.button.save' | translate }}</button>
         <button type="button" class="uk-button uk-button-default" uk-toggle="target: #form-customer-add; animation: uk-animation-fade"

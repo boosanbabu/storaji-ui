@@ -38,6 +38,25 @@ export class AuthService {
       );
   }
 
+   //Book
+   sendCredential(username: string, password: string) {
+  	let url = `${this._authUrl}/token`;
+  	let encodedCredentials = btoa(username+":"+password);
+  	let basicHeader = "Basic "+encodedCredentials;
+  	let headers = new Headers ({
+  		'Content-Type' : 'application/x-www-form-urlencoded',
+  		'Authorization' : basicHeader
+    });
+     
+    return this._http.get(url, {headers: headers})
+    .map((res: Response) => res.json())
+      .do(
+      data => this.afterLogin(data),
+      error => this.failedLogin(error)
+      );
+
+  }
+
   register(credentials: any): Observable<any> {
     this.loading('show');
 
@@ -63,6 +82,7 @@ export class AuthService {
   isAuthenticated(): boolean {
     const { token } = this._utils;
 
+    console.log(token + "Yes Authenticated");
     if (!token) {
       return false;
     }
@@ -84,6 +104,7 @@ export class AuthService {
   }
 
   afterLogin(data: any): void {
+    console.log("auth.serviceafterlogin " + data);
     const { token } = data;
     this._utils.setToken(token);
 
@@ -94,7 +115,7 @@ export class AuthService {
 
     setTimeout(() => {
       this.loading('hide');
-      this._router.navigate(['/dashboard']);
+      this._router.navigate(['/dashboard/products']);
     }, 2000);
   }
 
@@ -113,7 +134,7 @@ export class AuthService {
 
   loading(act: string): void {
     this._utils.loading({
-      selector: 'storaji-login .uk-card',
+      selector: 'thoorigai-login .uk-card',
       action: act
     });
   }

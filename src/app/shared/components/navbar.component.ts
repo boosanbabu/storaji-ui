@@ -8,7 +8,7 @@ import { UtilsService } from '../services/utils.service';
 
 declare var numeral: any;
 @Component({
-  selector: 'storaji-navbar',
+  selector: 'thoorigai-navbar',
   templateUrl: './navbar.component.html',
   styles: [],
   providers: [AuthService]

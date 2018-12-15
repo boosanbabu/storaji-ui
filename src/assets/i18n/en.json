@@ -21,6 +21,8 @@
     "sku": "SKU",
     "type": "Type",
     "no-data": "No Data",
+    "design":"Design",
+    "tax":"Tax",
     "customer": {
       "id": "Customer ID",
       "name": "Customer Name"
@@ -51,6 +53,10 @@
       "city": "City",
       "country": "Country",
       "postal-code": "Postal Code",
+      "shipping_city": "Shipping City",
+      "shipping_country": "Shipping Country",
+      "shipping_postal-code": "Shipping Postal Code",
+      "shipping_address": "Shipping Address",
       "address": "Address",
       "type": "Type",
       "sku": "SKU",
@@ -63,7 +69,10 @@
       "sold": "Sold",
       "amount": "Amount",
       "date_from": "Date From",
-      "date_to": "Date To"
+      "date_to": "Date To",
+      "status":"Status",
+      "tax":"Tax",
+      "design":"Design"
     },
     "placeholder": {
       "email": "Enter Email",
@@ -82,6 +91,10 @@
       "country": "Enter Country",
       "postal-code": "Enter Postal Code",
       "address": "Enter Address",
+      "shipping_city": "Enter Shipping City",
+      "shipping_country": "Enter Shipping Country",
+      "shipping_postal-code": "Enter Shipping Postal Code",
+      "shipping_address": "Enter Shipping Address",
       "type": "Enter Type",
       "sku": "Enter SKU",
       "stock": "Enter Stock",
@@ -89,7 +102,10 @@
       "selling-price": "Enter Selling Price",
       "description": "Enter Description",
       "amount": "Enter Amount",
-      "date": "Enter Date"
+      "date": "Enter Date",
+      "status":"Status",
+      "tax":"Tax",
+      "design":"Design"
     },
     "button": {
       "save": "Save",

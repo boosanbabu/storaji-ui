@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs/Subscription';
 
 declare var numeral: any;
 @Component({
-  selector: 'storaji-dashboard',
+  selector: 'thoorigai-dashboard',
   templateUrl: './dashboard.component.html',
   styles: []
 })

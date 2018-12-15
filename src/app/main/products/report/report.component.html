@@ -1,9 +1,9 @@
-<storaji-navbar></storaji-navbar>
-<storaji-sidebar></storaji-sidebar>
+<thoorigai-navbar></thoorigai-navbar>
+<thoorigai-sidebar></thoorigai-sidebar>
 <div class="content-padder content-background">
   <div class="uk-section-small">
     <div class="uk-container uk-container-large">
-      <storaji-products-filter (update)="onUpdate($event)"></storaji-products-filter>
+      <thoorigai-products-filter (update)="onUpdate($event)"></thoorigai-products-filter>
       <div class="uk-card uk-card-default uk-card-body" products-table>
         <div class="uk-display-block uk-text-right">
           <button class="uk-button uk-button-primary" type="button" (click)="save()" [disabled]="!products">{{ 'form.button.save-as-pdf' | translate }}</button>

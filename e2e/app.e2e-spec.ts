@@ -9,6 +9,6 @@ describe('frontend App', () => {
 
   it('should display login header', () => {
     page.navigateTo();
-    expect(page.getLoginHeader()).toEqual('STORAJI');
+    expect(page.getLoginHeader()).toEqual('thoorigai');
   });
 });

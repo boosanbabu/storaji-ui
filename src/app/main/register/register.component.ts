@@ -17,7 +17,7 @@ class Credentials {
 }
 
 @Component({
-  selector: 'storaji-register',
+  selector: 'thoorigai-register',
   templateUrl: './register.component.html',
   styles: []
 })

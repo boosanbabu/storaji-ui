@@ -10,7 +10,7 @@ import { UtilsService } from '../../../shared/services/utils.service';
 declare var numeral: any;
 declare var jQuery: any;
 @Component({
-  selector: 'storaji-customers-filter',
+  selector: 'thoorigai-customers-filter',
   templateUrl: './filter.component.html',
   styles: []
 })

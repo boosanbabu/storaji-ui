@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs/Subscription';
 import { UtilsService } from '../../shared/services/utils.service';
 
 @Component({
-  selector: 'storaji-orders',
+  selector: 'thoorigai-orders',
   templateUrl: './orders.component.html',
   styles: []
 })

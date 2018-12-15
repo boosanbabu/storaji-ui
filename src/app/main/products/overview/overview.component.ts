@@ -18,7 +18,7 @@ interface HTMLInputEvent extends Event {
 }
 
 @Component({
-  selector: 'storaji-products-overview',
+  selector: 'thoorigai-products-overview',
   templateUrl: './overview.component.html',
   styles: []
 })
@@ -101,17 +101,17 @@ export class OverviewComponent implements OnInit, OnDestroy {
       });
   }
 
-  async loadCustomers() {
-    this._utils.unsubscribeSub(this._customerSub);
-    this._customerSub = await this._routes.paramMap
-      .switchMap((params: ParamMap) => {
-        return this._productService.getCustomers(params.get('id'));
-      })
-      .subscribe(data => {
-        if (isArray(data)) {
-          this.customers = data;
-        }
-      });
-  }
+  // async loadCustomers() {
+  //   this._utils.unsubscribeSub(this._customerSub);
+  //   this._customerSub = await this._routes.paramMap
+  //     .switchMap((params: ParamMap) => {
+  //       return this._productService.getCustomers(params.get('id'));
+  //     })
+  //     .subscribe(data => {
+  //       if (isArray(data)) {
+  //         this.customers = data;
+  //       }
+  //     });
+  // }
 
 }

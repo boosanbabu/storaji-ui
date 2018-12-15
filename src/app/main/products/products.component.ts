@@ -7,13 +7,17 @@ import { Product } from '../../core/classes/product';
 import { UtilsService } from '../../shared/services/utils.service';
 
 @Component({
-  selector: 'storaji-products',
+  selector: 'thoorigai-products',
   templateUrl: './products.component.html',
   styles: []
 })
 export class ProductsComponent implements OnInit, OnDestroy {
   private _sub: Subscription = undefined;
-  products: Product[];
+  products: any[]=[{"name":"TBag","type":"Bag","status":"Active","stock":"3","design":"5s","sku":"299","tax":"10"},
+  {"name":"Nutritious Laddu","type":"Laddu","status":"Active","stock":"113","design":"5s","sku":"299","tax":"10"},
+  {"name":"TouserBag","type":"Bag","status":"Active","stock":"33","design":"5s","sku":"299","tax":"10"},
+  {"name":"Dnakdk","type":"Bag","status":"Active","stock":"-3","design":"s","sku":"299","tax":"10"}
+];
 
   constructor(
     private _productService: ProductsService,
@@ -22,7 +26,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this._loadProducts();
+    //this._loadProducts();
   }
 
   ngOnDestroy() {

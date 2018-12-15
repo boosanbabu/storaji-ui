@@ -13,7 +13,7 @@ import { StatsService } from '../../../core/services/stats.service';
 import { UtilsService } from '../../../shared/services/utils.service';
 
 @Component({
-  selector: 'storaji-orders-add',
+  selector: 'thoorigai-orders-add',
   templateUrl: './add.component.html',
   styles: []
 })

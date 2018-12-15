@@ -1,0 +1,161 @@
+{
+  "intro": "சரக்கு மேலாண்மை அமைப்பு",
+  "module": {
+    "title": {
+      "login": "உள் நுழை",
+      "logout": "வெளியேறு",
+      "register": "பதிவு",
+      "product": "பொருள்",
+      "customer": "வாடிக்கையாளர்",
+      "transaction": "பரிவர்த்தனை",
+      "dashboard": "அறிக்கைகள்",
+      "order": "ஆர்டர்"
+    }
+  },
+  "table": {
+    "number": "No.",
+    "name": "பெயர்",
+    "sold": "Terjual",
+    "status": "Status",
+    "stock": "Stok",
+    "sku": "SKU",
+    "type": "Tipe",
+    "no-data": "Tidak Ada Data",
+    "customer": {
+      "id": "ID Pelanggan",
+      "name": "பெயர் Pelanggan"
+    },
+    "company": {
+      "name": "பெயர் Perusahaan"
+    },
+    "order": {
+      "id": "ID Pesanan"
+    },
+    "product": {
+      "name": "பெயர்"
+    },
+    "date": "Tanggal"
+  },
+  "form": {
+    "label": {
+      "email": "Email",
+      "password": " கடவுச்சொல்",
+      "old-password": " கடவுச்சொல் Lama",
+      "new-password": " கடவுச்சொல் Baru",
+      "product": "Produk",
+      "customer": "Pelanggan",
+      "name": "பெயர்",
+      "fullname": "பெயர் Lengkap",
+      "company-name": "பெயர் Perusahaan",
+      "customer-name": "பெயர் Pelanggan",
+      "city": "Kota",
+      "country": "Negara",
+      "postal-code": "Kode Pos",
+      "address": "Alamat",
+      "type": "Tipe",
+      "sku": "SKU",
+      "stock": "Stok",
+      "cost": "Harga Pokok",
+      "selling-price": "Harga Jual",
+      "price": "Harga",
+      "total": "Total",
+      "description": "Keterangan",
+      "sold": "Terjual",
+      "amount": "Jumlah",
+      "date_from": "Dari Tanggal",
+      "date_to": "Sampai Tanggal"
+    },
+    "placeholder": {
+      "email": "Masukkan Email",
+      "order-id": "Masukkan ID Pesanan",
+      "password": "Masukkan  கடவுச்சொல்",
+      "old-password": "Masukkan  கடவுச்சொல் Lama",
+      "new-password": "Masukkan  கடவுச்சொல் Baru",
+      "product": "Masukkan Produk",
+      "customer": "Masukkan Pelanggan",
+      "fullname": "Masukkan பெயர் Lengkap",
+      "customer-name": "Masukkan பெயர் Pelanggan",
+      "company-name": "Masukkan பெயர் Perusahaan",
+      "company-type": "Masukkan Kategori Perusahaan",
+      "name": "Masukkan பெயர்",
+      "city": "Masukkan Kota",
+      "country": "Masukkan Negara",
+      "postal-code": "Masukkan Kode Pos",
+      "address": "Masukkan Alamat",
+      "type": "Masukkan Tipe",
+      "sku": "Masukkan SKU",
+      "stock": "Masukkan Stok",
+      "cost": "Masukkan Harga Pokok",
+      "selling-price": "Masukkan Harga Jual",
+      "description": "Masukkan Keterangan",
+      "amount": "Masukkan Jumlah",
+      "date": "Masukkan Tanggal"
+    },
+    "button": {
+      "save": "Simpan",
+      "cancel": "Batalkan",
+      "show-customers": "Munculkan pelanggan",
+      "save-as-pdf": "Simpan PDF",
+      "search": "Cari",
+      "clear": "Bersihkan"
+    }
+  },
+  "text": {
+    "new": {
+      "product": "Tambah Produk",
+      "customer": "Tambah Pelanggan",
+      "order": "Tambah Pesanan"
+    },
+    "edit": {
+      "product": "Ubah Produk",
+      "customer": "Ubah Pelanggan",
+      "order": "Ubah Pesanan",
+      "profile": "Ubah Profil",
+      "currency": "Ganti Mata Uang"
+    },
+    "search-option": "Pilihan Pencarian",
+    "i18n": "Pilihan Bahasa",
+    "general": "Umum",
+    "module": "Modul",
+    "report": "Laporan",
+    "forgot-password": "கடவுச்சொல்லை மறந்துவிட்டீர்களா?",
+    "has-account": "Sudah punya akun?",
+    "has-no-account": "புதிய பயனர்?",
+    "customers-who-bought-this-product": "Pelanggan yang membeli produk ini",
+    "stat": {
+      "financial": "Keuangan",
+      "top-selling": "Produk Paling Banyak Terjual",
+      "revenue": "Pendapatan",
+      "profit": "Keuntungan",
+      "cost": "Biaya",
+      "total": "Total"
+    },
+    "graph": {
+      "title": "Grafik Mingguan",
+      "current": "Pendapatan Minggu Ini",
+      "last": "Pendapatan Minggu Lalu"
+    },
+    "in-stock": "Stok ada",
+    "sold-out": "Stok habis"
+  },
+  "confirmation": {
+    "logout": {
+      "title": "Konfirmasi Keluar",
+      "message": "Apa anda yakin ingin melanjutkan keluar?",
+      "continue": "Ya, biarkan saya keluar",
+      "cancel": "Tidak, dan kembali"
+    },
+    "delete": {
+      "title": "Konfirmasi Hapus Data",
+      "message": "Apa anda yakin ingin melanjutkan menghapus data ini?",
+      "continue": "Hapus",
+      "cancel": "Batalkan"
+    }
+  },
+  "notification": {
+    "login": {
+      "success": "Mengalihkan ke Beranda ...",
+      "failed": "Email dan  கடவுச்சொல் tidak cocok."
+    }
+  }
+}

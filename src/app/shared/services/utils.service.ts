@@ -20,16 +20,16 @@ export class UtilsService {
   ) { }
 
   get token(): string {
-    return localStorage.getItem('oatoken');
+    return localStorage.getItem('xAuthToken');
   }
 
   setToken(token: string): string {
-    localStorage.setItem('oatoken', token);
+    localStorage.setItem('xAuthToken', token);
     return this.token;
   }
 
   unsetToken(): void {
-    localStorage.removeItem('oatoken');
+    localStorage.removeItem('xAuthToken');
   }
 
   makeOptions(headers: Headers = this.makeHeaders()): RequestOptions {
@@ -44,7 +44,7 @@ export class UtilsService {
     const opts = Object.assign({}, defaultOptions, options);
     const defaultHeaders = { 'Content-Type': 'application/json' };
     const tokenHeader = opts.withToken
-      ? { 'Authorization': `Bearer ${this.token}` }
+      ? { 'Authorization': `Basic ${this.token}` }
       : {};
     const headers = Object.assign({}, defaultHeaders, tokenHeader, opts.customHeaders);
 
@@ -53,7 +53,7 @@ export class UtilsService {
 
   loading(options: object): void {
     const defaultOpts = {
-      selector: 'storaji-root',
+      selector: 'thoorigai-root',
       action: 'show',
       nice: false
     };

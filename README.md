@@ -1,25 +1,25 @@
 <p align="center">
-  <img src="https://github.com/IndomaximTechID/storaji-ui/blob/master/src/assets/storaji.png?raw=true" height="120" />
-  <h3 align="center">Storaji</h3>
+  <img src="https://github.com/paypalTechID/thoorigai-ui/blob/master/src/assets/thoorigai.png?raw=true" height="120" />
+  <h3 align="center">thoorigai</h3>
   <p align="center">The Light/Responsive Inventory Management System</p>
   <p align="center">
-    <a href="https://github.com/IndomaximTechID/storaji/releases"><img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey.svg" alt="Platforms"></a>
+    <a href="https://github.com/paypalTechID/thoorigai/releases"><img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey.svg" alt="Platforms"></a>
     <a href="https://www.patreon.com/bePatron?c=1404837"><img src="https://img.shields.io/badge/donate-patreon-red.svg" alt="Donate"></a>
   </p>
   <p align="center">
-    <a href="https://github.com/IndomaximTechID/storaji"><img src="https://img.shields.io/github/release/IndomaximTechID/storaji/all.svg" alt="GitHub version"></a>
-    <a href="https://travis-ci.org/IndomaximTechID/storaji-ui"><img src="https://api.travis-ci.org/IndomaximTechID/storaji-ui.svg?branch=master" alt="Travis"></a>
-    <a href="https://ci.appveyor.com/project/lowsprofile/storaji-ui"><img src="https://ci.appveyor.com/api/projects/status/github/indomaximtechid/storaji-ui?branch=master&svg=true" alt="AppVeyor"></a>
-    <a href="https://github.com/IndomaximTechID/storaji/releases"><img src="https://img.shields.io/github/downloads/indomaximtechid/storaji/total.svg" alt="Downloads"></a>
+    <a href="https://github.com/paypalTechID/thoorigai"><img src="https://img.shields.io/github/release/paypalTechID/thoorigai/all.svg" alt="GitHub version"></a>
+    <a href="https://travis-ci.org/paypalTechID/thoorigai-ui"><img src="https://api.travis-ci.org/paypalTechID/thoorigai-ui.svg?branch=master" alt="Travis"></a>
+    <a href="https://ci.appveyor.com/project/lowsprofile/thoorigai-ui"><img src="https://ci.appveyor.com/api/projects/status/github/paypaltechid/thoorigai-ui?branch=master&svg=true" alt="AppVeyor"></a>
+    <a href="https://github.com/paypalTechID/thoorigai/releases"><img src="https://img.shields.io/github/downloads/paypaltechid/thoorigai/total.svg" alt="Downloads"></a>
   </p>
 </p>
 
 ## Downloads
 macOS 10.9+ | Windows 7+ | Linux
 -----------------| ---| ---|
-<a href='https://github.com/IndomaximTechID/storaji/releases/download/v1.0.0-beta.9/Storaji-1.0.0-beta.9.dmg'>Download v1.0.0-beta.9</a> | <a href='https://github.com/IndomaximTechID/storaji/releases/download/v1.0.0-beta.9/StorajiSetup.exe'>Download v1.0.0-beta.9</a> | <a href='https://github.com/IndomaximTechID/storaji/releases/download/v1.0.0-beta.9/storaji-1.0.0-beta.9-x86_64.AppImage'>Download v1.0.0-beta.9</a> |
+<a href='https://github.com/paypalTechID/thoorigai/releases/download/v1.0.0-beta.9/thoorigai-1.0.0-beta.9.dmg'>Download v1.0.0-beta.9</a> | <a href='https://github.com/paypalTechID/thoorigai/releases/download/v1.0.0-beta.9/thoorigaiSetup.exe'>Download v1.0.0-beta.9</a> | <a href='https://github.com/paypalTechID/thoorigai/releases/download/v1.0.0-beta.9/thoorigai-1.0.0-beta.9-x86_64.AppImage'>Download v1.0.0-beta.9</a> |
 
-[More Download Options](https://github.com/IndomaximTechID/storaji/releases)
+[More Download Options](https://github.com/paypalTechID/thoorigai/releases)
 
 ## Technologies
 - [Electron](https://electronjs.org/)
@@ -50,15 +50,15 @@ macOS 10.9+ | Windows 7+ | Linux
 - :100: Check for update app.
 - :moneybag: Free! :)
 
-**If you think Storaji is useful, let me know by putting a star on this project :wink:**
+**If you think thoorigai is useful, let me know by putting a star on this project :wink:**
 
 ## Screenshots
 <p align="center">
-  <img src="https://github.com/IndomaximTechID/storaji/blob/gh-pages/screenshoots/cover.png?raw=true" />
+  <img src="https://github.com/paypalTechID/thoorigai/blob/gh-pages/screenshoots/cover.png?raw=true" />
 </p>
 
 ## Why
-Mainly designed for small-to-medium companies, Storaji is a modern and very intuitive inventory management application built with some of the trendiest web technologies.
+Mainly designed for small-to-medium companies, thoorigai is a modern and very intuitive inventory management application built with some of the trendiest web technologies.
 Right off the bat, it's worth pointing out that this is by no means a professional software for inventory management. Be that as it may, it can still prove itself fairly useful as it boasts an interesting set of primary features.
 
 I believe there are many people who needs a simple tool to manage everything from product inventories to orders and of course it's free to use.
@@ -71,20 +71,20 @@ I believe there are many people who needs a simple tool to manage everything fro
 - PHP Composer.
 
 #### Backend
-- Clone the project from [IndomaximTechID/storaji](https://github.com/IndomaximTechID/storaji/) to your local machine.
-- Open terminal and `cd` into the cloned folder, usually `cd storaji`.
+- Clone the project from [paypalTechID/thoorigai](https://github.com/paypalTechID/thoorigai/) to your local machine.
+- Open terminal and `cd` into the cloned folder, usually `cd thoorigai`.
 - Run `composer install` to install dependencies.
 - Run `cp .env.example .env` to copy the original environtment variables.
 - Modify `.env` file, find `DATABASE_` prefix and change it to your database configuration, you can see documentation about this on [Laravel Site](https://laravel.com/docs/configuration#environment-configuration).
 - Run `php artisan key:generate` to generate application key.
-- Run `php artisan migrate` to create default database schema of storaji.
+- Run `php artisan migrate` to create default database schema of thoorigai.
 - Run `php artisan passport:install` to install default OAuth access token.
 - Run `php artisan serve` to run PHP Built-in web server.
 - Now your backend is ready to listen request from frontend at `https://localhost:8000/api`.
 
 #### Frontend
-- Clone the project from [IndomaximTechID/storaji-ui](https://github.com/IndomaximTechID/storaji-ui/) to your local machine.
-- Open terminal and `cd` into the cloned folder, usually `cd storaji-ui`.
+- Clone the project from [paypalTechID/thoorigai-ui](https://github.com/paypalTechID/thoorigai-ui/) to your local machine.
+- Open terminal and `cd` into the cloned folder, usually `cd thoorigai-ui`.
 - Modify `app.ts` under `src/app/shared/classes/` directory, and change value of `api` to your local api server, usually `api: 'https://localhost:8000/api'`.
 - Run `npm install` to install dependencies.
 - Run `npm run ng:serve` to serve the app as web-based at `https://localhost:4200`.
@@ -101,7 +101,7 @@ I believe there are many people who needs a simple tool to manage everything fro
 Note that on Linux you will need additional dependencies to provide the `icns2png` and `gm` commands. Ubuntu/Debian users can run: `sudo apt install -y icnsutils graphicsmagick`.
 
 ## License
-MIT License © 2017-Present [Indomaxim Technology](https://github.com/IndomaximTechID). All rights reserved.
+MIT License © 2017-Present [paypal Technology](https://github.com/paypalTechID). All rights reserved.
 
 ## End User License Agreement (EULA)
 - You will not use this repository for malicious activity.

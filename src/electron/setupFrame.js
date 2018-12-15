@@ -76,7 +76,7 @@ Frame.prototype.createMenu = function () {
         {
           label: 'Learn More',
           click: () => {
-            shell.openExternal('https://github.com/IndomaximTechID/storaji-ui')
+            shell.openExternal('https://github.com/paypalTechID/thoorigai-ui')
           }
         }
       ],
@@ -108,7 +108,7 @@ Frame.prototype.createMenu = function () {
 
 Frame.prototype.createTray = function () {
   const _parent = this;
-  _parent.tray = new Tray(`${__dirname}/www/assets/storaji.png`);
+  _parent.tray = new Tray(`${__dirname}/www/assets/thoorigai.png`);
   _parent.tray.setContextMenu(Menu.buildFromTemplate([
     {
       label: 'Open',
@@ -137,7 +137,7 @@ Frame.prototype.createTray = function () {
       }
     }
   ]))
-  _parent.tray.setToolTip('Storaji')
+  _parent.tray.setToolTip('thoorigai')
   _parent.tray.on('click', () => {
     _parent.win.isVisible()
       ? _parent.win.hide()
@@ -149,8 +149,8 @@ Frame.prototype.createWindow = function () {
   const _parent = this;
 
   _parent.win = new BrowserWindow({
-    title: 'Storaji',
-    icon: `${__dirname}/www/assets/storaji.ico`,
+    title: 'thoorigai',
+    icon: `${__dirname}/www/assets/thoorigai.ico`,
     width: 900,
     height: 700,
     backgroundColor: '#ffffff',

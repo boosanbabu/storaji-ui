@@ -6,7 +6,7 @@ import { ProfileService } from '../../core/services/profile.service';
 import { UtilsService } from '../services/utils.service';
 
 @Component({
-  selector: 'storaji-profile-edit',
+  selector: 'thoorigai-profile-edit',
   templateUrl: './profile.component.html',
   styles: [],
   providers: [ProfileService]
