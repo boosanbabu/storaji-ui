@@ -13,11 +13,8 @@ import { UtilsService } from '../../shared/services/utils.service';
 })
 export class ProductsComponent implements OnInit, OnDestroy {
   private _sub: Subscription = undefined;
-  products: any[]=[{"name":"TBag","type":"Bag","status":"Active","stock":"3","design":"5s","sku":"299","tax":"10"},
-  {"name":"Nutritious Laddu","type":"Laddu","status":"Active","stock":"113","design":"5s","sku":"299","tax":"10"},
-  {"name":"TouserBag","type":"Bag","status":"Active","stock":"33","design":"5s","sku":"299","tax":"10"},
-  {"name":"Dnakdk","type":"Bag","status":"Active","stock":"-3","design":"s","sku":"299","tax":"10"}
-];
+  products: Product[];
+;
 
   constructor(
     private _productService: ProductsService,
@@ -26,7 +23,8 @@ export class ProductsComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    //this._loadProducts();
+    this._loadProducts();
+    console.log("Products " + this.products);
   }
 
   ngOnDestroy() {
@@ -34,9 +32,11 @@ export class ProductsComponent implements OnInit, OnDestroy {
   }
 
   private _loadProducts() {
+    
     this._utils.unsubscribeSub(this._sub);
     this._sub = this._productService.get().subscribe(
-      data => isArray(data) ? this.products = data : data
+      data => {console.log(data);
+        console.log(isArray(data));isArray(data) ? this.products = data : data;}
     );
   }
 

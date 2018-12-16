@@ -15,4 +15,5 @@ export class Order {
   status?:String;
   shipment_cost?:number;
   order_type?:String;
+  order_total?:String;
 }

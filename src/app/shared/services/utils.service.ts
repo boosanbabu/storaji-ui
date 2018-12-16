@@ -43,9 +43,10 @@ export class UtilsService {
     };
     const opts = Object.assign({}, defaultOptions, options);
     const defaultHeaders = { 'Content-Type': 'application/json' };
-    const tokenHeader = opts.withToken
-      ? { 'Authorization': `Basic ${this.token}` }
-      : {};
+     const tokenHeader = 
+    //opts.withToken
+    //   ? { 'Authorization': `Basic ${this.token}` }: 
+    {};
     const headers = Object.assign({}, defaultHeaders, tokenHeader, opts.customHeaders);
 
     return new Headers(headers);

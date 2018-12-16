@@ -8,9 +8,12 @@
         <table class="uk-table uk-table-justify uk-table-divider">
           <thead>
             <tr>
-              <th class="uk-width-auto">{{ 'table.order.id' | translate }}</th>
+              <th class="uk-width-auto">{{ 'table.order.number' | translate }}</th>
               <th class="uk-width-medium">{{ 'table.customer.name' | translate }}</th>
               <th>{{ 'table.date' | translate }}</th>
+              <th>{{ 'table.dueDate' | translate }}</th>
+              <th>{{ 'table.status' | translate }}</th>
+              <th>{{ 'table.orderValue' | translate }}</th>
             </tr>
           </thead>
           <tbody>
@@ -19,12 +22,15 @@
             </tr>
             <tr *ngFor="let order of orders; let i=index;">
               <td class="uk-table-link">
-                <a [routerLink]="['../orders', order.id]" class="uk-link-reset uk-text-uppercase">#{{order.id.split('-')[0]}}</a>
+                <a [routerLink]="['../orders', order.number]" class="uk-link-reset uk-text-uppercase">#{{order.id.split('-')[0]}}</a>
               </td>
               <td class="uk-table-link">
                 <a [routerLink]="['../customers', order.customer.id]" class="uk-link-reset">{{order.customer.full_name}}</a>
               </td>
               <td>{{order.created_at}}</td>
+              <td>{{order.due_date}}</td>
+              <td>{{order.status}}</td>
+              <td>{{order.order_total}}</td>
             </tr>
           </tbody>
         </table>

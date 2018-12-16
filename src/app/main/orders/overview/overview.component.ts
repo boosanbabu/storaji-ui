@@ -125,7 +125,7 @@ export class OverviewComponent implements OnInit, OnDestroy {
               style: 'item'
             },
             {
-              text: this.currency.set(this.order.order_detail.product.selling_price).format(this._utils.format),
+              text: this.currency.set(this.order.order_detail.product.unitPrice).format(this._utils.format),
               style: 'item'
             }
           ],
@@ -147,7 +147,7 @@ export class OverviewComponent implements OnInit, OnDestroy {
             {
               text: this
                 .currency
-                .set(this.order.order_detail.product.selling_price * this.order.order_detail.amount)
+                .set(this.order.order_detail.product.unitPrice * this.order.order_detail.amount)
                 .format(this._utils.format),
               style: 'item'
             },

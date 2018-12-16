@@ -14,7 +14,7 @@ import { Customer } from '../classes/customer';
 
 @Injectable()
 export class ProductsService {
-  private _productsUrl = `${new Config().api}/products`;
+  private _productsUrl = `${new Config().api}/product`;
   private _headers = this._utils.makeHeaders({ withToken: true });
 
   constructor(
@@ -35,9 +35,9 @@ export class ProductsService {
     }
 
     return this._http.get(`${this._productsUrl}`, options)
-      .map((res: Response) => res.json().data)
+      .map((res: Response) => res.json())
       .do(
-      data => this.afterRequest(),
+      data => {this.afterRequest();console.log("pget"+data)},
       error => { console.log(error); }
       );
   }
@@ -57,7 +57,8 @@ export class ProductsService {
 
   add(product: Product): Observable<Product[]> {
     this.beforeRequest();
-    const body = JSON.stringify(product);
+    var prods =[product];
+    const body = JSON.stringify(prods);
 
     return this._http.post(`${this._productsUrl}/add`, body, this._utils.makeOptions(this._headers))
       .map((res: Response) => res.json().data)

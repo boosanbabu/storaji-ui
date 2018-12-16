@@ -34,7 +34,7 @@
               <td>{{(product.type) ? product.type.name : product.type}}</td>
               <td>{{product.stock}}</td>
               <td>{{currency.set(product.cost).format(format())}}</td>
-              <td>{{currency.set(product.selling_price).format(format())}}</td>
+              <td>{{currency.set(product.unitPrice).format(format())}}</td>
               <div *ngIf="(product.stock > 0); then ok else not"></div>
               <ng-template #ok>
                 <td>

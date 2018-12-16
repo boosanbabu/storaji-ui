@@ -70,7 +70,7 @@ export class AddComponent implements OnInit, OnDestroy {
     this._sub = this._productsService.get().subscribe(
       data => {
         forEach(data, (product: Product) => {
-          if (product.stock > 0) {
+          if (product.stockAvailable > 0) {
             this.products.push(product);
           }
         });
