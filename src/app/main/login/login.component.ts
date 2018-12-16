@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   	this._auth.sendCredential(this.credential.username, this.credential.password).subscribe(
   		res => {
   			console.log(res);
-        localStorage.setItem("oatoken", res.json().token);
+        localStorage.setItem("xAuthToken", res.json().token);
         
   			//this.loggedIn = true;
   		//	location.reload();

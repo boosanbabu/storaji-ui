@@ -46,9 +46,9 @@
           [(ngModel)]="product.tax" #tax="ngModel" (keyup)="onKeyup($event)">
       </div>
       <div class="uk-padding-small">
-        <label for="selling_price" class="uk-form-label">{{ 'form.label.selling-price' | translate }}</label>
-        <input type="text" name="selling_price" class="uk-input" placeholder="{{ 'form.placeholder.selling-price' | translate }}"
-          [required]="true" [(ngModel)]="product.selling_price" #selling_price="ngModel" (keyup)="onKeyup($event)">
+        <label for="unitPrice" class="uk-form-label">{{ 'form.label.selling-price' | translate }}</label>
+        <input type="text" name="unitPrice" class="uk-input" placeholder="{{ 'form.placeholder.selling-price' | translate }}"
+          [required]="true" [(ngModel)]="product.unitPrice" #unitPrice="ngModel" (keyup)="onKeyup($event)">
       </div>
       <div class="uk-width-1-1 uk-padding-small">
         <label for="Description" class="uk-form-label">{{ 'form.label.description' | translate }}</label>

@@ -71,7 +71,7 @@ export class OverviewComponent implements OnInit, OnDestroy {
               this.product = data;
 
               this.product.cost = numeral(this.product.cost).format(this._utils.format);
-              this.product.selling_price = numeral(this.product.selling_price).format(this._utils.format);
+              this.product.unitPrice = numeral(this.product.unitPrice).format(this._utils.format);
             }
           }
           );
@@ -96,7 +96,7 @@ export class OverviewComponent implements OnInit, OnDestroy {
           this.product = data;
 
           this.product.cost = numeral(this.product.cost).format(this._utils.format);
-          this.product.selling_price = numeral(this.product.selling_price).format(this._utils.format);
+          this.product.unitPrice = numeral(this.product.unitPrice).format(this._utils.format);
         }
       });
   }

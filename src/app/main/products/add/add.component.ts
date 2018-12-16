@@ -20,7 +20,7 @@ export class AddComponent implements OnInit, OnDestroy {
   update: EventEmitter<Product[]> = new EventEmitter<Product[]>();
   product: Product;
   productTypes: any = [{"name":"Bag"},{"name":"Laddu"}];
-  status: any = [{"name":"Active"},{"name":"Inactive"}];
+  status: any = ["Active","Inactive"];
   constructor(
     private _productsService: ProductsService,
     //private _productTypesService: ProductTypesService,
@@ -35,7 +35,8 @@ export class AddComponent implements OnInit, OnDestroy {
   }
   onSubmit() {
     this._utils.unsubscribeSub(this._sub);
-    this.product.selling_price = numeral(this.product.selling_price).value();
+    this.product.unitPrice = numeral(this.product.unitPrice).value();
+    this.product.productId = this.product.design+this.product.sku;
     this._sub = this._productsService.add(this.product)
       .subscribe(data => {
         if (isArray(data)) {

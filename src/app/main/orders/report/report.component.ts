@@ -122,9 +122,9 @@ export class ReportComponent implements OnInit, OnDestroy {
         item.order_detail.product.name,
         item.customer.full_name,
         item.order_detail.amount,
-        this.currency.set(item.order_detail.product.selling_price)
+        this.currency.set(item.order_detail.product.unitPrice)
           .format(this._utils.format),
-        this.currency.set(item.order_detail.amount * item.order_detail.product.selling_price)
+        this.currency.set(item.order_detail.amount * item.order_detail.product.unitPrice)
           .format(this._utils.format),
         item.created_at,
       ]);

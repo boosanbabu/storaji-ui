@@ -68,7 +68,7 @@ export class AddComponent implements OnInit, OnDestroy {
     this._sub = this._productsService.get().subscribe(
       data => {
         forEach(data, (product: Product) => {
-          if (product.stock > 0) {
+          if (product.stockAvailable > 0) {
             this.products.push(product);
           }
         });
@@ -87,8 +87,8 @@ export class AddComponent implements OnInit, OnDestroy {
   }
 
   available_stock(e: any, i: number) {
-    if (e.target.value > this.orders[i].order_detail.product.stock) {
-      return e.target.value = this.orders[i].order_detail.product.stock;
+    if (e.target.value > this.orders[i].order_detail.product.stockAvailable) {
+      return e.target.value = this.orders[i].order_detail.product.stockAvailable;
     }
   }
 
