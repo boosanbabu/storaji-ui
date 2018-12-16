@@ -3,9 +3,8 @@ import { OrderLineItem } from './order-detail';
 
 export class Order {
   id?: string;
-  customer_id?: string;
-  customer: Customer = new Customer();
-  order_detail: OrderLineItem = new OrderLineItem();
+  customer: String;
+  order_detail: OrderLineItem[] =[];
   created_at?: Date;
   updated_at?: Date;
   due_date?:Date;
@@ -13,7 +12,7 @@ export class Order {
   notes?:String;
   advance_paid?:number;
   shipping_date?:Date;
-  order_status?:String;
+  status?:String;
   shipment_cost?:number;
   order_type?:String;
 }

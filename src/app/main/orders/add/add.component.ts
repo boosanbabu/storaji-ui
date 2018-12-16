@@ -27,7 +27,8 @@ export class AddComponent implements OnInit, OnDestroy {
 
   products: Product[] = [];
   customers: Customer[] = [];
-  orders: Order[] = [];
+  order : Order ;
+  orderDetail : OrderLineItem[] ;
 
   constructor(
     private _productsService: ProductsService,
@@ -50,20 +51,21 @@ export class AddComponent implements OnInit, OnDestroy {
 
   async onSubmit() {
     this._utils.unsubscribeSub(this._addSub);
-    this._addSub = await this._ordersService.add(this.orders).subscribe(
+    /*this._addSub = await this._ordersService.add(this.orders).subscribe(
       data => {
         if (isArray(data)) {
           this.update.emit(data);
           this.init();
         }
       }
-    );
+    );*/
   }
 
   init() {
-    this._utils.unsubscribeSub(this._sub);
+    this.initOrder();
+    /*this._utils.unsubscribeSub(this._sub);
     this._utils.unsubscribeSub(this._customerSub);
-    this.orders = [new Order()];
+    this.order = new Order();
 
     this._sub = this._productsService.get().subscribe(
       data => {
@@ -79,17 +81,22 @@ export class AddComponent implements OnInit, OnDestroy {
     this._customerSub = this._customersService.get().subscribe(
       data => this.customers = data,
       err => { console.log(err); }
-    );
+    );*/
   }
 
   onAdd() {
-    this.orders.push(new Order());
+    //this.orders.push(new Order());
   }
 
   available_stock(e: any, i: number) {
-    if (e.target.value > this.orders[i].order_detail.product.stock) {
+    /*if (e.target.value > this.orders[i].order_detail.product.stock) {
       return e.target.value = this.orders[i].order_detail.product.stock;
-    }
+    }*/
+  }
+
+  initOrder()
+  {
+    this.order = new Order();
   }
 
 }
